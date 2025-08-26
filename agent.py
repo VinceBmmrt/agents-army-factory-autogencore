@@ -5,9 +5,12 @@ from autogen_agentchat.messages import TextMessage
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 import messages
 import random
+from dotenv import load_dotenv
+
+
+load_dotenv() 
 
 # This is the template clone that is gonna be use to create more agents
-
 
 class Agent(RoutedAgent):
 
@@ -26,7 +29,7 @@ class Agent(RoutedAgent):
 
     def __init__(self, name) -> None:
         super().__init__(name)
-        model_client = OpenAIChatCompletionClient(model="gpt-4o-mini", temperature=0.7)
+        model_client = OpenAIChatCompletionClient(model="gpt-4o-mini", temperature=0.7, )
         self._delegate = AssistantAgent(
             name,
             model_client=model_client,

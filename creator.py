@@ -7,6 +7,11 @@ from autogen_core import TRACE_LOGGER_NAME
 import importlib
 import logging
 from autogen_core import AgentId
+from dotenv import load_dotenv
+
+
+load_dotenv() 
+
 
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger(TRACE_LOGGER_NAME)

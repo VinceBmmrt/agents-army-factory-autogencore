@@ -8,7 +8,7 @@ import asyncio
 
 # Script for orchestrate and launch the process
 
-HOW_MANY_AGENTS = 5
+HOW_MANY_AGENTS = 20
 
 async def create_and_message(worker, creator_id, i: int):
     try:
