@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv() 
 
-# This is the template clone that is gonna be use to create more agents
+# This is the template clone that is gonna be used to create more agents
 
 class Agent(RoutedAgent):
 
